@@ -36,12 +36,6 @@ class RecipeDetailView(View):
         return render(request, 'recipes/recipedetail.html', {'recipe': recipe})
 
 
-# class CreateView(generic.edit.CreateView):
-#     template_name = 'recipes/create_recipe.html'
-#     model = Recipe
-#     form_class = CreateForm
-#
-
 class CreateView(View):
     def get(self, request):
         form = CreateForm()

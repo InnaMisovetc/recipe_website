@@ -2,7 +2,6 @@ from django.db import models
 
 
 class TimeStampMixin(models.Model):
-
     created_at = models.DateTimeField("Время создания рецета", auto_now_add=True)
     updated_at = models.DateTimeField("Время обновления рецета", auto_now=True)
 
